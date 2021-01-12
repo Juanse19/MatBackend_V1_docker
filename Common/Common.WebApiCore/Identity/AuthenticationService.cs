@@ -83,7 +83,8 @@ namespace Common.WebApiCore.Identity
             {
                 if (newUser.Id > 0)
                 {
-                    await userManager.AddToRoleAsync(newUser, "User");
+                    //await userManager.AddToRoleAsync(newUser, "User");
+                    await userManager.AddToRoleAsync(newUser, signUpDto.Rol);
                     var token = jwtManager.GenerateToken(newUser);
                     return AuthResult<Token>.TokenResult(token);
                 }
