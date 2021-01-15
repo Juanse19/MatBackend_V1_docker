@@ -10,6 +10,6 @@ namespace Common.DTO
     {
         public string FullName { get; set; }
         public string ConfirmPassword { get; set; }
-        public string Rol { get; set; }
+        public string Role { get; set; }
     }
 }

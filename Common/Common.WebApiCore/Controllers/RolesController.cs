@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Common.WebApiCore.Controllers
 {
     [Route("users/{id:int}/roles")]
-    [Authorize(Policy = "AdminOnly")]
+    //[Authorize(Policy = "AdminOnly")]
     public class RolesController : BaseApiController
     {
         protected readonly IRoleService roleService;
