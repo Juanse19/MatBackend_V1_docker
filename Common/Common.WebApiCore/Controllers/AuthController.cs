@@ -46,9 +46,20 @@ namespace Common.WebApiCore.Controllers
         [Route("reset-pass")]
         public async Task<IActionResult> ChangePassword(ChangePasswordDTO changePasswordDto)
         {
-            var currentUserId = User.GetUserId();
+            //var currentUserId = User.GetUserId();
+            int currentUserId=0;
+            string currentUserIdString="0";
+            string[] words = changePasswordDto.Password.Split(';');
 
-            var result = await authService.ChangePassword(changePasswordDto, currentUserId);
+            foreach (var word in words)
+            {
+                currentUserIdString = word;
+            }
+
+            changePasswordDto.Password = changePasswordDto.Password.Replace( ";" + currentUserIdString,"");
+            currentUserId = int.Parse(currentUserIdString);
+
+             var result = await authService.ChangePassword(changePasswordDto, currentUserId);
 
             if (result.Succeeded)
             {

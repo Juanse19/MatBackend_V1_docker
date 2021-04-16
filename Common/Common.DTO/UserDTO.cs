@@ -18,5 +18,21 @@ namespace Common.DTO
         public AddressDTO Address { get; set; }
 
         public SettingsDTO Settings { get; set; }
+
+        //public UserRoles userRoles { get; set; }
+       
+
+    }
+
+    public class UserRoles
+    {
+        public class Role
+        {
+            public int Id;
+            public string Name;
+        }
+        public int RoleId;
+        //public string User;
+        public int UserId;
     }
 }
