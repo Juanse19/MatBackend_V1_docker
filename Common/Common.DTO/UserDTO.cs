@@ -14,6 +14,10 @@ namespace Common.DTO
         public string Login { get; set; }
         public string Email { get; set; }
         public int? Age { get; set; }
+        public int? States { get; set; }
+        public long? Licens_id { get; set; }
+        //public string Role { get; set; }
+        public RoleDTO role { get; set; }
 
         public AddressDTO Address { get; set; }
 

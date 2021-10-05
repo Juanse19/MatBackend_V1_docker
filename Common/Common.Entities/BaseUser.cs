@@ -18,13 +18,17 @@ namespace Common.Entities
 
         public string Email { get; set; }
         public int? Age { get; set; }
-
+        public int? States { get; set; }
+        public long? Licens_id { get; set; }
+        //public string Role { get; set; }
+        //public string roleName { get; set; }
         public string AddressStreet { get; set; }
         public string AddressCity { get; set; }
         public string AddressZipCode { get; set; }
         public double? AddressLat { get; set; }
         public double? AddressLng { get; set; }
 
+        //public virtual BaseRole role { get; set; }
         public virtual UserPhoto Photo { get; set; }
         public virtual Settings Settings { get; set; }
 

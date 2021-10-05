@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2046
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5C6EBE6E-0607-4777-B622-60BB7B757760}"
 EndProject
@@ -36,6 +36,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.Services.Infrastructure", "IoT\IoT.Services.Infrastructure\IoT.Services.Infrastructure.csproj", "{80E0FA7B-C348-4BF9-9EAF-2B821CF83301}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT.WebApiCore", "IoT\IoT.WebApiCore\IoT.WebApiCore.csproj", "{187A350E-7001-4313-95D7-23A2E6B28191}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7D506F1A-A24B-4CC8-8303-483E2169A980}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{187A350E-7001-4313-95D7-23A2E6B28191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187A350E-7001-4313-95D7-23A2E6B28191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187A350E-7001-4313-95D7-23A2E6B28191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D506F1A-A24B-4CC8-8303-483E2169A980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D506F1A-A24B-4CC8-8303-483E2169A980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D506F1A-A24B-4CC8-8303-483E2169A980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D506F1A-A24B-4CC8-8303-483E2169A980}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

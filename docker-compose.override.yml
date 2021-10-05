@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  iot.webapicore:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "3001:80"
