@@ -17,7 +17,7 @@ namespace Common.DTO
         public int? States { get; set; }
         public long? Licens_id { get; set; }
         //public string Role { get; set; }
-        public RoleDTO role { get; set; }
+        //public RoleDTO role { get; set; }
 
         public AddressDTO Address { get; set; }
 
